@@ -1,0 +1,114 @@
+<!-- This page structure and style is derived from man7.org -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="gr__man7_org"><head>
+    <link rel="stylesheet" type="text/css" href="style.css" title="style">
+    <link rel="stylesheet" type="text/css" href="linux-style.css" title="style">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <title>ASHISH(7) - Linux manual page</title>
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+
+<!--%%%PAGE_START%%%-->
+
+<pre><span class="headline">ASHISH(7)                  Linux Programmer's Manual                 ASHISH(7)</span>
+
+</pre>
+<h2><a id="NAME" href="#NAME"></a>NAME  &nbsp; &nbsp; &nbsp; &nbsp; <a href="#top_of_page"><span class="top-link">top</span></a></h2><pre>       Ashish Chavan - linux enthusiast
+</pre>
+<h2><a id="SYNOPSIS" href="#SYNOPSIS"></a>SYNOPSIS  &nbsp; &nbsp; &nbsp; &nbsp; <a href="#top_of_page"><span class="top-link">top</span></a></h2><pre>  
+       <b>#include &lt;analytic.h&gt;</b>
+       <b>#include &lt;self_learning.h&gt;</b>
+       <b>#include &lt;inclination_for_programming.h&gt;</b>
+
+       <b>#include &lt;embedded_linux.h&gt;</b>
+       <b>#include &lt;device_driver.h&gt;</b>
+       <b>#include &lt;system_programming.h&gt;</b>
+       <b>#include &lt;networking.h&gt;</b>
+       <b>#include &lt;porting.h&gt;</b>
+
+       <b>void ashish(void *</b><i>opportunity</i><b>);</b>
+</b></pre>
+<h2><a id="DESCRIPTION" href="#DESCRIPTION"></a>DESCRIPTION  &nbsp; &nbsp; &nbsp; &nbsp; <a href="#top_of_page"><span class="top-link">top</span></a></h2><pre>
+       I'm a Software Devloper with skills in Application-Devlopment, 
+       System-Programming, Linux-Device-Driver and Embedded-Linux. I 
+       enjoy solving problems and had always been enthusiastic towards 
+       technology.
+
+       Have hands-ons experience on C (GNU), python, linux API's and 
+       GNU-Toolchain. Possess sound knowledge on Race-Conditions, 
+       Locking-Machanisums, Concurrency, IPC and socket-programming .
+
+       Experienced in using debugging tools like gdb, valgrind and 
+       efence.
+
+       Also been an active participant in compititive-programming 
+       on multiple platform, related Profiles and certifications:
+       *  <a href="https://www.codechef.com/certificates/public/ec9d056">CodeChef Certified Data Structure & Algorithms Programme (CCDSAP)</a>
+       *  <a href="https://www.hackerrank.com/und3f9">HackerRank</a>
+     </pre>
+
+<h2><a id="NOTES" href="#NOTES"></a>NOTES  &nbsp; &nbsp; &nbsp; &nbsp; <a href="#top_of_page"><span class="top-link">top</span></a></h2><pre>
+      <b>Following contains a list of my cases-studies and their finding : </b>
+	
+      <b>1)</b> <u>Design and implementation of an image proccessing application.</u>
+
+      -- Findings :
+
+         * Method overriding and abstraction can be achived in 'C' through 
+	   function pointers (who says 'C' doesn't not supports OOPs ?). 
+         * Shared Objects are used for creating dynamically loadable context 
+	   for applications.    
+         * Linker is a bundle of :
+           1. Tool (ld on unix based system) - Used for static builds 
+           2. Dynamic linker (in memory) - Used for dynamic builds  
+         * Static builds are preferred if application have limited functionality 
+	   which is fixed with a garantee of no changes for its life time.
+         * Dynamic build are preferred when application is feature rich and is 
+	   suppose to adapt future needs and must be supported for a long term.
+ 
+      <b>2)</b> <u>Design of Mutual-Exclusion locking API's</u>
+       
+      -- Findings : 
+
+        * Without atomic-intructions mutual-exclusion api's are difficult to 
+	implement. 
+        * semaphore are kernel resource with an atomic counter and a wait-queue 
+	attached to it  
+        * Mutual-Exclution is a protocol with type 
+          1. Wait Lock (glibc implement this as mutex)
+          2. polling Lock (glibc implement this as spin lock)
+        * The following are realtime bugs assosiated with usage of locking.
+          - Accidental release
+          - Recrusive Deadlock
+          - Owner-death deadlock
+          - Recursive unlock
+          - Re-initialization of live-lock
+</pre>
+
+<h2><a id="HISTORY" href="#HISTORY"></a>HISTORY  &nbsp; &nbsp; &nbsp; &nbsp; <a href="#top_of_page"><span class="top-link">top</span></a></h2><pre>
+       
+       * <b>"Currently Intern At TechVeda"</a>
+
+       * <b>"BE in Information Technology, 2018, Mumbai University"</b>
+
+       * <b>"Diploma in Information Technolofy, 2015, Maharashtra State Board of Technical Education, Mumbai , India"</b>
+        
+</pre>
+
+<h2><a id="SEE ALSO" href="#SEE-ALSO"></a>SEE ALSO  &nbsp; &nbsp; &nbsp; &nbsp; <a href="#top_of_page"><span class="top-link">top</span></a></h2><pre>
+       <b>Github</b>       : <u>https://github.com/a5hish</u>
+       <b>CodeChef</b>     : <u>https://www.codechef.com/certificates/public/ec9d056</u>
+       <b>HackerRank</b>   : <u>https://www.hackerrank.com/und3f9</u>
+
+       <b>Phone Number</b> : <u>8424002063</u>
+       <b>Email</b>        : <u>ashish.gschavan@gmail.com</u>
+</pre>
+
+<br><br>
+<span class="footline"><pre>ASHISH(7)                            2019-06-10                         ASHISH(7)</span>
+</pre>
+</body></html>
